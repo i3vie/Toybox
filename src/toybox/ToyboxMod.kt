@@ -1,4 +1,4 @@
-package example
+package toybox
 
 import arc.*
 import arc.util.*
@@ -6,10 +6,10 @@ import mindustry.game.EventType.*
 import mindustry.mod.*
 import mindustry.ui.dialogs.*
 
-class ExampleKotlinMod : Mod(){
+class ToyboxMod : Mod(){
 
     init{
-        Log.info("Loaded ExampleKotlinMod constructor.")
+        Log.info("Loaded toybox constructor.")
 
         //listen for game load event
         Events.on(ClientLoadEvent::class.java){
@@ -19,7 +19,7 @@ class ExampleKotlinMod : Mod(){
                     cont.apply{
                         add("behold").row()
                         //mod sprites are prefixed with the mod name (this mod is called 'example-kotlin-mod' in its config)
-                        image(Core.atlas.find("example-kotlin-mod-frog")).pad(20f).row()
+                        image(Core.atlas.find("toybox-frog")).pad(20f).row()
                         button("I see"){ hide() }.size(100f, 50f)
                     }
                     show()

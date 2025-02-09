@@ -1,17 +1,17 @@
 #the mod name as displayed in-game
-displayName: "Kotlin Mod Template"
+displayName: "Toybox"
 
 #the internal name of your mod
-name: "example-kotlin-mod"
+name: "toybox"
 
 #your name
-author: "You"
+author: "zt64, i3vie"
 
 #the fully qualified main class of the mod
-main: "example.ExampleKotlinMod"
+main: "toybox.ToyboxMod"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Kotlin mod template."
+description: "Mixed bag of Mindustry additions"
 
 #the mod version
 version: 1.0
