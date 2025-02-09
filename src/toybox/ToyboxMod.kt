@@ -15,15 +15,7 @@ class ToyboxMod : Mod(){
         Events.on(ClientLoadEvent::class.java){
             //show dialog upon startup
             Time.runTask(10f){
-                BaseDialog("frog").apply{
-                    cont.apply{
-                        add("behold").row()
-                        //mod sprites are prefixed with the mod name (this mod is called 'example-kotlin-mod' in its config)
-                        image(Core.atlas.find("toybox-frog")).pad(20f).row()
-                        button("I see"){ hide() }.size(100f, 50f)
-                    }
-                    show()
-                }
+                Log.info("hello wlorld")
             }
         }
     }
