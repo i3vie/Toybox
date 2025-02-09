@@ -4,7 +4,8 @@ import arc.*
 import arc.util.*
 import mindustry.game.EventType.*
 import mindustry.mod.*
-import mindustry.ui.dialogs.*
+import toybox.content.oilprocessing.ToyboxOilProcessingLiquids
+import toybox.content.oilprocessing.blocks.ToyboxOilProcessingBlocks
 
 class ToyboxMod : Mod(){
 
@@ -21,6 +22,8 @@ class ToyboxMod : Mod(){
     }
 
     override fun loadContent(){
-        Log.info("Loading some example content.")
+
+        ToyboxOilProcessingLiquids.load()
+        ToyboxOilProcessingBlocks.load()
     }
 }
