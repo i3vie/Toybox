@@ -1,0 +1,10 @@
+[versions]
+kotlin = "2.1.10"
+mindustry = "v146"
+
+[libraries]
+mindustry = { module = "com.github.Anuken.Mindustry:core", version.ref = "mindustry" }
+arc = { module = "com.github.Anuken.Arc:arc-core", version.ref = "mindustry" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
